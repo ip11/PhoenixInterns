@@ -1,0 +1,421 @@
+<DOCTYPE html>
+	<html>
+	<body>
+	<pre>
+		<!--
+		-->
+		<!--...-->
+	1. < !DOCTYPE>- Defines the document type
+	<!DOCTYPE html>
+    <html>
+    <head>
+    <title>Title of the document</title>
+    </head>
+
+    <body>
+    The content of the document......
+    </body>
+
+    </html>
+
+	2. < address>- Defines contact information for the author/owner of a document
+        <address>
+        Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br> 
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        </address>
+
+        3.  < area>- Defines an area inside an image-map
+            <html>
+<body>
+
+<p>Click on the sun or on one of the planets to watch it closer:</p>
+
+<img src="planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+
+<map name="planetmap">
+  <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
+  <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
+  <area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
+</map>
+
+</body>
+</html>
+
+
+        4. < audio>- Defines sound content
+           <html>
+<body>
+
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<p><strong>Note:</strong> The audio tag is not supported in Internet Explorer 8 and earlier versions.</p>
+
+</body>
+</html>
+        
+        5. < basefont>- Specifies a default color, size, and font for all text in a document
+           <head>
+           <basefont color="red" size="5">
+           </head>
+
+           <body>
+           <h1>This is a heading</h1>
+           <p>This is a paragraph.</p>
+           </body>
+           
+        6. < big>- Defines big text
+          <p><big>Bigger text</big></p> 
+
+        7. < br>-Defines a single line break
+           This text contains<br>a line break.
+
+        8. < caption>-Defines a table caption
+           <table>
+           <caption>Monthly savings</caption>
+           <tr>
+           <th>Month</th>
+           <th>Savings</th>
+           </tr>
+           <tr>
+           <td>January</td>
+           <td>$100</td>
+           </tr>
+           </table>
+
+        9. < code>-Defines a piece of computer code
+           <code>A piece of computer code</code>
+
+        10. < data>-Links the given content with a machine-readable translation
+            <ul>
+            <li><data value="21053">Cherry Tomato</data></li>
+            <li><data value="21054">Beef Tomato</data></li>
+            <li><data value="21055">Snack Tomato</data></li>
+            </ul>
+        11. < del>-Defines text that has been deleted from a document
+            <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+
+        12. < dialog>-Defines a dialog box or window
+            <table>
+            <tr>
+            <th>January <dialog open>This is an open dialog window</dialog></th>
+            <th>February</th>
+            <th>March</th>
+            </tr>
+            <tr>
+            <td>31</td>
+            <td>28</td>
+            <td>31</td>
+            </tr>
+            </table>
+
+        13. < dl>-Defines a description list
+            <dl>
+            <dt>Coffee</dt>
+            <dd>Black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>White cold drink</dd>
+            </dl>
+
+        14. < embed>-Defines a container for an external (non-HTML) application
+            <html>
+<body>
+
+<embed src="helloworld.swf">
+
+</body>
+</html>
+
+        15. < figure>-Specifies self-contained content
+            <html>
+<body>
+
+<p>The Pulpit Rock is a massive cliff 604 metres (1982 feet) above Lysefjorden, opposite the Kjerag plateau, in Forsand, Ryfylke, Norway. The top of the cliff is approximately 25 by 25 metres (82 by 82 feet) square and almost flat, and is a famous tourist attraction in Norway.</p>
+
+<figure>
+  <img src="img_pulpit.jpg" alt="The Pulpit Rock" width="304" height="228">
+</figure>
+<p><strong>Note:</strong> The figure tag is not supported in Internet Explorer 8 and earlier versions.</p>
+
+</body>
+</html>
+
+        16. < form>-Defines an HTML form for user input
+            <html>
+<body>
+
+<form action="/action_page.php">
+First name: <input type="text" name="FirstName" value="Mickey"><br>
+Last name: <input type="text" name="LastName" value="Mouse"><br>
+<input type="submit" value="Submit">
+</form>
+
+<p>Click the "Submit" button and the form-data will be sent to a page on the server called "/action_page.php".</p>
+
+</body>
+</html>
+
+
+        17. < h1> to < h6>-	Defines HTML headings
+            <h1>This is heading 1</h1>
+            <h2>This is heading 2</h2>
+            <h3>This is heading 3</h3>
+            <h4>This is heading 4</h4>
+            <h5>This is heading 5</h5>
+            <h6>This is heading 6</h6>
+
+        18. < hr>-	Defines a thematic change in the content 
+           <h1>HTML</h1>
+           <p>HTML is a language for describing web pages.....</p>
+
+           <hr>
+
+           <h1>CSS</h1>
+           <p>CSS defines how to display HTML elements.....</p>
+
+        19. < iframe>-	Defines an inline frame
+            <html>
+<body>
+
+<iframe src="https://www.w3schools.com">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+
+</body>
+</html>
+
+
+
+        20. < ins>-	Defines a text that has been inserted into a document
+            <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+
+        21. < legend>-Defines a caption for a < fieldset> element
+            <html>
+<body>
+
+<form>
+ <fieldset>
+  <legend>Personalia:</legend>
+  Name: <input type="text"><br>
+  Email: <input type="text"><br>
+  Date of birth: <input type="text">
+ </fieldset>
+</form>
+
+</body>
+</html>
+
+
+        22. < main>-Specifies the main content of a document
+            <main>
+            <h1>Web Browsers</h1>
+            <p>Google Chrome, Firefox, and Internet Explorer are the most used browsers today.</p>
+
+            <article>
+            <h1>Google Chrome</h1>
+            <p>Google Chrome is a free, open-source web browser developed by Google,
+            released in 2008.</p>
+            </article>
+
+            <article>
+            <h1>Internet Explorer</h1>
+            <p>Internet Explorer is a free web browser from Microsoft, released in 1995.</p>
+            </article>
+
+            <article>
+            <h1>Mozilla Firefox</h1>
+            <p>Firefox is a free, open-source web browser from Mozilla, released in 2004.</p>
+            </article>
+            </main>
+
+        23. < meta>-Defines metadata about an HTML document
+            <html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<p>All meta information goes in the head section...</p>
+
+</body>
+</html>
+
+        24. < noframes>-Defines an alternate content for users that do not support frames
+            <html>
+
+<frameset cols="25%,50%,25%">
+  <frame src="frame_a.htm">
+  <frame src="frame_b.htm">
+  <frame src="frame_c.htm">
+  <noframes>Sorry, your browser does not handle frames!</noframes>
+</frameset>
+
+</html>
+
+
+        25. < ol>-Defines an ordered list
+            <ol>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+            </ol>
+
+            <ol start="50">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+            </ol>   
+
+        26. < output>-Defines the result of a calculation
+            <html>
+<body>
+
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+<input type="range" id="a" value="50">100
++<input type="number" id="b" value="50">
+=<output name="x" for="a b"></output>
+</form>
+
+<p><strong>Note:</strong> The output element is not supported in Edge 12 or Internet Explorer and earlier versions.</p>
+
+</body>
+</html>
+
+
+        27. < picture>-Defines a container for multiple image resources
+           <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<picture>
+  <source media="(min-width: 650px)" srcset="img_pink_flowers.jpg">
+  <source media="(min-width: 465px)" srcset="img_white_flower.jpg">
+  <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+</picture>
+
+<p>Resize the browser to see different versions of the picture loading at different viewport sizes.
+The browser looks for the first source element where the media query matches the user's current viewport width,
+and fetches the image specified in the srcset attribute.</p>
+
+<p>The img element is required as the last child tag of the picture declaration block.
+The img element is used to provide backward compatibility for browsers that do not support the picture element, or if none of the source tags matched.
+</p>
+
+<p><strong>Note:</strong> The picture element is not supported in IE12 and earlier or Safari 9.0 and earlier.</p>
+
+</body>
+
+        28. < q>-Defines a short quotation
+            <p>WWF's goal is to: 
+            <q>Build a future where people live in harmony with nature.</q>
+            We hope they succeed.</p>
+
+        29. < ruby>-Defines a ruby annotation (for East Asian typography)   
+            <ruby>
+            漢 <rt> ㄏㄢˋ </rt>
+            </ruby>
+
+        30. < script>-Defines a client-side script 
+            <script>
+            document.getElementById("demo").innerHTML = "Hello JavaScript!";
+            </script> 
+
+        31. < small>-Defines smaller text
+            <p>W3Schools.com - the world's largest web development site.</p>
+            <p><small>Copyright 1999-2050 by Refsnes Data</small></p>
+
+        32. < strike>-Defines strikethrough text
+            <p>Version 2.0 is <strike>not yet available!</strike> now available!</p>
+
+        33. < sub>-Defines subscripted text        
+            <p>This text contains <sub>subscript</sub> text.</p>
+
+        34. < svg>-Defines a container for SVG graphics
+            <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+            </svg> 
+           
+        35. < td>-Defines a cell in a table
+            <table>
+            <tr>
+            <td>Cell A</td>
+            <td>Cell B</td>
+            </tr>
+            </table>
+
+        36. < tfoot>-Groups the footer content in a table
+            <table>
+            <thead>
+            <tr>
+            <th>Month</th>
+            <th>Savings</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>January</td>
+            <td>$100</td>
+            </tr>
+            <tr>
+            <td>February</td>
+            <td>$80</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+            <td>Sum</td>
+            <td>$180</td>
+            </tr>
+            </tfoot>
+            </table>
+
+        37.< time>-Defines a date/time
+           <p>We open at <time>10:00</time> every morning.</p>
+
+<p>I have a party on <time datetime="2008-02-14 20:00">Valentine's Day </time>.</p>
+
+        38. < track>-Defines text tracks for media elements (< video> and < audio>)
+            <video width="320" height="240" controls>
+  <source src="https://www.youtube.com/watch?v=iiKwb3AtSyY" type="video/mp4">
+  <source src="https://www.youtube.com/watch?v=iiKwb3AtSyY" type="video/ogg">
+  <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+  <track src="subtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+</video>
+
+        39. < ul>-Defines an unordered list
+            <ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+        40. < wbr>-Defines a possible line-break
+            <p>
+            To learn AJAX, you must be familiar with the XML<wbr>Http<wbr>Request Object.
+            </p>
+
+        41. < keygen>-Generates a cryptographic key pair in an HTML document
+            <form action="/html/tags/html_keygen_tag_action.cfm" method="post" target="key">
+<keygen name="rsaPublicKey" challenge="012345" keytype="RSA">
+<input type="submit" name="generateCertificate" value="Generate">
+</form>
+<iframe name="key" width="100%" height="50%"></iframe>
+
+       
+
+
+
+       </pre> 
+     </body>
+	</html>
